@@ -27,9 +27,24 @@
     </header>
 
     <hr />
-    
+
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "Footer!", "#", class: "next-quote" %>
+          </div>
+          <div class="col-6 footer-blurb">
+            You're a melty <a href="/">Buttercat</a><br />
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
