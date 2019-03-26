@@ -11,17 +11,19 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
           <br />
             LOGO
         </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Splurting out weird quotes wowowowoowowow
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -38,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "Footer!", "#", class: "next-quote" %>
+            <%= link_to "Footer!", root_path, class: "next-quote" %>
           </div>
           <div class="col-6 footer-blurb">
             You're a melty <a href="/">Buttercat</a><br />
